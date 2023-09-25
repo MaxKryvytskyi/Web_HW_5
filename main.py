@@ -1,15 +1,17 @@
+import argparse
 import asyncio
+import sys
 import logging
-import aiohttp
+from datetime import datetime
+from decimal import Decimal
 import platform
+
+import aiohttp
 from rich.console import Console
 from rich.table import Table
-from datetime import datetime
-import sys
-import argparse
 
+console = Console()
 sys.stdout.reconfigure(encoding='utf-8')
-
 list_data = {
 "AUD": "Австралийский Доллар",
 "AZN": "Азербайджанский Ман",
@@ -66,38 +68,59 @@ def date_check():
         date = date.date().strftime("%d.%m.%Y")
         return f"{ulr}{date}"
     elif date > now:
-        date =now.date().strftime("%d.%m.%Y")
+        date = now.date().strftime("%d.%m.%Y")
         return f"{ulr}{date}"
     else: 
         date = time.date().strftime("%d.%m.%Y")
         return f"{ulr}{date}"
 
-def data_output(data):
+def data_output(datas):
+    
     table = Table(title=f"Курс валют станом за {date}")
-    table.add_column("Літерний код", justify="center", style="cyan", no_wrap=False)
-    table.add_column("Назва валюти", justify="center", style="cyan", no_wrap=False)
-    table.add_column("Курс продажу НБУ", justify="center", style="cyan", no_wrap=False)
-    table.add_column("Курс продажу ПБ", justify="center", style="cyan", no_wrap=False)
-    table.add_column("Курс купівлі ПБ", justify="center", style="cyan", no_wrap=False)
+    table.add_column("Літерний код", justify="center", style="color(5)", no_wrap=False)
+    table.add_column("Назва валюти", justify="center", style="rgb(255,136,0)", no_wrap=False)
+    table.add_column("Курс продажу НБУ", justify="center", style="Yellow", no_wrap=False)
+    table.add_column("Курс продажу ПБ", justify="center", style="green", no_wrap=False)
+    table.add_column("Курс купівлі ПБ", justify="center", style="red", no_wrap=False)
     if money:
-        table.add_column(f"{money} Валюти по курсу НБУ в UAH", justify="center", style="cyan", no_wrap=True)
+        table.add_column(f"{money} Валюти по курсу НБУ в UAH", justify="center", style="color(12)", no_wrap=True)
 
-    for i in data:
-        if i == "exchangeRate":
-            for t in data["exchangeRate"]:
-                if currencies:
-                    for currency in currencies:
-                        if currency.upper() == t['currency']:
-                            try:
-                                table.add_row(t['currency'], list_data[t['currency']], f"{t['saleRateNB']} {t['purchaseRateNB']}", str(t["saleRate"]), str(t["purchaseRate"]), f"{round(money * t['saleRateNB'], 2)}" if money else "")
-                            except KeyError:
-                                table.add_row(t['currency'], list_data[t['currency']], f"{t['saleRateNB']} {t['purchaseRateNB']}", "", "", f"{round(money * t['saleRateNB'], 2)}" if money else "")
-                else:
+    for data in datas["exchangeRate"]:
+        cache = []
+        if currencies:
+            for currency in currencies:
+                if currency.upper() == data['currency']:
+                    
+                    cache.append(data['currency'])
+                    cache.append(list_data[data['currency']])
+                    cache.append(f"{data['saleRateNB']} {data['purchaseRateNB']}")
+
                     try:
-                        table.add_row(t['currency'], list_data[t['currency']], f"{t['saleRateNB']} {t['purchaseRateNB']}", str(t["saleRate"]), str(t["purchaseRate"]), f"{round(money * t['saleRateNB'], 2)}" if money else "")
+                        cache.append(str(data["saleRate"]))
+                        cache.append(str(data["purchaseRate"]))
                     except KeyError:
-                        table.add_row(t['currency'], list_data[t['currency']], f"{t['saleRateNB']} {t['purchaseRateNB']}", "", "", f"{round(money * t['saleRateNB'], 2)}" if money else "") 
-    console = Console()
+                        cache.append("")
+                        cache.append("")
+
+                    if money:
+                        cache.append(f"{round(Decimal(money) * Decimal(data['saleRateNB']), 2)}")
+        else:
+            cache.append(data['currency'])
+            cache.append(list_data[data['currency']])
+            cache.append(f"{round(Decimal(money) * Decimal(data['saleRateNB']), 2)}")
+
+            try:
+                cache.append(str(data["saleRate"]))
+                cache.append(str(data["purchaseRate"]))
+            except KeyError:
+                cache.append("")
+                cache.append("")
+
+            if money:
+                cache.append(f"{round(money * data['saleRateNB'], 2)}")
+        if cache:
+            table.add_row(*cache)
+    
     console.print(table)
 
 
