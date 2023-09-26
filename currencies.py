@@ -2,6 +2,7 @@ import argparse
 import asyncio
 import sys
 import logging
+import re
 from datetime import datetime
 from decimal import Decimal
 import platform
@@ -11,6 +12,7 @@ from rich.console import Console
 from rich.table import Table
 
 console = Console()
+
 sys.stdout.reconfigure(encoding='utf-8')
 list_data = {
 "AUD": "Австралийский Доллар",
@@ -41,18 +43,13 @@ list_data = {
 "XAU": "Золото"
 }
 
-# Створіть парсер командного рядка
 parser = argparse.ArgumentParser(description='Приклад програми з аргументами.')
 
-# Додайте аргументи
 parser.add_argument('-d', '--date', required=True, help='Дата у форматі DD.MM.YYYY')
 parser.add_argument('-c', '--currencies', nargs='+', required=False, help='Валюти')
 parser.add_argument('-m', '--money', type=float, required=False, help='Сума грошей в валюті')
 
-# Розіберіть командний рядок
 args = parser.parse_args()
-
-# Отримайте значення аргументів
 date = args.date
 currencies = args.currencies
 money = args.money
@@ -123,7 +120,6 @@ def data_output(datas):
     
     console.print(table)
 
-
 async def main():
     async with aiohttp.ClientSession() as session:
         logging.info(f"Starting: {ulr}")
@@ -136,8 +132,6 @@ async def main():
                     logging.error(f'Error status {response.status} for {ulr}')
         except aiohttp.ClientConnectorError as e:
             logging.error(f'Connection error {ulr}: {e}')
-
-
 
 if __name__ == '__main__':
     ulr = date_check()

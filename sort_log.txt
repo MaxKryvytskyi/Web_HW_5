@@ -244,3 +244,1355 @@
 2023-09-26 00:02:32,075 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=26.09.2023
 2023-09-26 00:02:39,581 Starting: https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.2023
 2023-09-26 01:15:05,382 Starting: https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.2023
+2023-09-26 02:55:33,379 Starting: https://api.privatbank.ua/p24api/exchange_rates?json&date=26.09.2023
+2023-09-26 02:55:33,616 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=26.09.2023
+2023-09-26 02:55:52,402 Starting: https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.2023
+2023-09-26 22:39:24,132 server listening on 127.0.0.1:8080
+2023-09-26 22:39:24,133 server listening on [::1]:8080
+2023-09-26 22:39:30,216 connection open
+2023-09-26 22:39:30,218 ('::1', 64093, 0, 0) connects
+2023-09-26 22:39:32,530 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:41:14,160 server listening on [::1]:8080
+2023-09-26 22:41:14,161 server listening on 127.0.0.1:8080
+2023-09-26 22:41:16,665 connection open
+2023-09-26 22:41:16,724 ('::1', 64112, 0, 0) connects
+2023-09-26 22:41:18,101 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:41:18,274 <class 'dict'>
+2023-09-26 22:41:18,274 ('::1', 64112, 0, 0) disconnects
+2023-09-26 22:41:18,274 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 100, in data_output
+    logging.error(f"{type(data)}")
+                          ^^^^
+UnboundLocalError: cannot access local variable 'data' where it is not associated with a value
+2023-09-26 22:41:18,277 connection closed
+2023-09-26 22:42:15,496 server listening on 127.0.0.1:8080
+2023-09-26 22:42:15,497 server listening on [::1]:8080
+2023-09-26 22:42:19,301 connection open
+2023-09-26 22:42:19,330 ('::1', 64124, 0, 0) connects
+2023-09-26 22:42:20,965 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:42:21,142 <class 'dict'>
+2023-09-26 22:42:21,142 ('::1', 64124, 0, 0) disconnects
+2023-09-26 22:42:21,142 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 100, in data_output
+    logging.error(f"{type(data)}")
+                          ^^^^
+UnboundLocalError: cannot access local variable 'data' where it is not associated with a value
+2023-09-26 22:42:21,144 connection closed
+2023-09-26 22:42:37,341 server listening on [::1]:8080
+2023-09-26 22:42:37,342 server listening on 127.0.0.1:8080
+2023-09-26 22:42:39,272 connection open
+2023-09-26 22:42:39,274 ('::1', 64132, 0, 0) connects
+2023-09-26 22:42:40,670 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:42:40,905 <class 'dict'>
+2023-09-26 22:42:40,905 ('::1', 64132, 0, 0) disconnects
+2023-09-26 22:42:40,906 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 100, in data_output
+    logging.info(f"{type(data)}")
+                         ^^^^
+UnboundLocalError: cannot access local variable 'data' where it is not associated with a value
+2023-09-26 22:42:40,908 connection closed
+2023-09-26 22:42:59,488 server listening on [::1]:8080
+2023-09-26 22:42:59,490 server listening on 127.0.0.1:8080
+2023-09-26 22:43:02,251 connection open
+2023-09-26 22:43:02,253 ('::1', 64139, 0, 0) connects
+2023-09-26 22:43:04,529 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:43:04,704 {'date': '25.09.2023', 'bank': 'PB', 'baseCurrency': 980, 'baseCurrencyLit': 'UAH', 'exchangeRate': [{'baseCurrency': 'UAH', 'currency': 'AUD', 'saleRateNB': 23.5941, 'purchaseRateNB': 23.5941}, {'baseCurrency': 'UAH', 'currency': 'AZN', 'saleRateNB': 21.5477, 'purchaseRateNB': 21.5477}, {'baseCurrency': 'UAH', 'currency': 'BYN', 'saleRateNB': 13.2919, 'purchaseRateNB': 13.2919}, {'baseCurrency': 'UAH', 'currency': 'CAD', 'saleRateNB': 27.2209, 'purchaseRateNB': 27.2209}, {'baseCurrency': 'UAH', 'currency': 'CHF', 'saleRateNB': 40.3404, 'purchaseRateNB': 40.3404, 'saleRate': 41.53, 'purchaseRate': 40.6}, {'baseCurrency': 'UAH', 'currency': 'CNY', 'saleRateNB': 5.0067, 'purchaseRateNB': 5.0067}, {'baseCurrency': 'UAH', 'currency': 'CZK', 'saleRateNB': 1.5969, 'purchaseRateNB': 1.5969, 'saleRate': 1.6475, 'purchaseRate': 1.61}, {'baseCurrency': 'UAH', 'currency': 'DKK', 'saleRateNB': 5.2172, 'purchaseRateNB': 5.2172}, {'baseCurrency': 'UAH', 'currency': 'EUR', 'saleRateNB': 38.898, 'purchaseRateNB': 38.898, 'saleRate': 41.15, 'purchaseRate': 40.15}, {'baseCurrency': 'UAH', 'currency': 'GBP', 'saleRateNB': 44.8185, 'purchaseRateNB': 44.8185, 'saleRate': 46.27, 'purchaseRate': 45.2}, {'baseCurrency': 'UAH', 'currency': 'GEL', 'saleRateNB': 13.9235, 'purchaseRateNB': 13.9235}, {'baseCurrency': 'UAH', 'currency': 'HUF', 'saleRateNB': 0.100585, 'purchaseRateNB': 0.100585}, {'baseCurrency': 'UAH', 'currency': 'ILS', 'saleRateNB': 9.6028, 'purchaseRateNB': 9.6028}, {'baseCurrency': 'UAH', 'currency': 'JPY', 'saleRateNB': 0.24667, 'purchaseRateNB': 0.24667}, {'baseCurrency': 'UAH', 'currency': 'KZT', 'saleRateNB': 0.077226, 'purchaseRateNB': 0.077226}, {'baseCurrency': 'UAH', 'currency': 'MDL', 'saleRateNB': 2.014, 'purchaseRateNB': 2.014}, {'baseCurrency': 'UAH', 'currency': 'NOK', 'saleRateNB': 3.4037, 'purchaseRateNB': 3.4037}, {'baseCurrency': 'UAH', 'currency': 'PLN', 'saleRateNB': 8.4624, 'purchaseRateNB': 8.4624, 'saleRate': 8.75, 'purchaseRate': 8.55}, {'baseCurrency': 'UAH', 'currency': 'SEK', 'saleRateNB': 3.2715, 'purchaseRateNB': 3.2715}, {'baseCurrency': 'UAH', 'currency': 'SGD', 'saleRateNB': 26.7902, 'purchaseRateNB': 26.7902}, {'baseCurrency': 'UAH', 'currency': 'TMT', 'saleRateNB': 10.4482, 'purchaseRateNB': 10.4482}, {'baseCurrency': 'UAH', 'currency': 'TRY', 'saleRateNB': 1.3461, 'purchaseRateNB': 1.3461}, {'baseCurrency': 'UAH', 'currency': 'UAH', 'saleRateNB': 1.0, 'purchaseRateNB': 1.0}, {'baseCurrency': 'UAH', 'currency': 'USD', 'saleRateNB': 36.5686, 'purchaseRateNB': 36.5686, 'saleRate': 37.8, 'purchaseRate': 37.2}, {'baseCurrency': 'UAH', 'currency': 'UZS', 'saleRateNB': 0.0030247, 'purchaseRateNB': 0.0030247}, {'baseCurrency': 'UAH', 'currency': 'XAU', 'saleRateNB': 70436.61, 'purchaseRateNB': 70436.61}]}
+2023-09-26 22:43:04,705 ('::1', 64139, 0, 0) disconnects
+2023-09-26 22:43:04,705 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 100, in data_output
+    logging.info(f"{data}")
+                    ^^^^
+UnboundLocalError: cannot access local variable 'data' where it is not associated with a value
+2023-09-26 22:43:04,707 connection closed
+2023-09-26 22:43:06,618 connection open
+2023-09-26 22:43:06,634 ('::1', 64141, 0, 0) connects
+2023-09-26 22:43:08,283 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:43:14,703 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.202325.09.2023
+2023-09-26 22:43:14,704 None
+2023-09-26 22:43:14,704 ('::1', 64141, 0, 0) disconnects
+2023-09-26 22:43:14,704 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 100, in data_output
+    logging.info(f"{data}")
+                    ^^^^
+UnboundLocalError: cannot access local variable 'data' where it is not associated with a value
+2023-09-26 22:43:14,705 connection closed
+2023-09-26 22:43:33,006 server listening on [::1]:8080
+2023-09-26 22:43:33,008 server listening on 127.0.0.1:8080
+2023-09-26 22:43:35,897 connection open
+2023-09-26 22:43:35,899 ('::1', 64150, 0, 0) connects
+2023-09-26 22:43:37,705 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:43:37,876 <class 'dict'>
+2023-09-26 22:43:37,876 <class 'dict'>
+2023-09-26 22:43:37,876 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,877 <class 'dict'>
+2023-09-26 22:43:37,878 <class 'dict'>
+2023-09-26 22:43:37,878 <class 'dict'>
+2023-09-26 22:43:37,878 <class 'dict'>
+2023-09-26 22:43:37,878 <class 'dict'>
+2023-09-26 22:43:37,878 <class 'dict'>
+2023-09-26 22:43:37,878 <class 'dict'>
+2023-09-26 22:43:37,878 <class 'dict'>
+2023-09-26 22:43:37,878 <class 'dict'>
+2023-09-26 22:43:37,879 <class 'dict'>
+2023-09-26 22:43:37,879 <class 'dict'>
+2023-09-26 22:43:37,879 <class 'dict'>
+2023-09-26 22:48:43,439 Starting: https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.2023
+2023-09-26 22:51:40,196 server listening on 127.0.0.1:8080
+2023-09-26 22:51:40,198 server listening on [::1]:8080
+2023-09-26 22:51:44,492 connection open
+2023-09-26 22:51:44,495 ('::1', 64206, 0, 0) connects
+2023-09-26 22:51:46,329 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:51:46,506 <class 'dict'>
+2023-09-26 22:51:46,506 ('::1', 64206, 0, 0) disconnects
+2023-09-26 22:51:46,506 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 139, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 151, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 102, in data_output
+    await data
+TypeError: object dict can't be used in 'await' expression
+2023-09-26 22:51:46,508 connection closed
+2023-09-26 22:52:20,446 server listening on [::1]:8080
+2023-09-26 22:52:20,447 server listening on 127.0.0.1:8080
+2023-09-26 22:52:41,951 server listening on 127.0.0.1:8080
+2023-09-26 22:52:41,952 server listening on [::1]:8080
+2023-09-26 22:52:44,006 connection open
+2023-09-26 22:52:44,007 ('::1', 64225, 0, 0) connects
+2023-09-26 22:52:45,835 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'AUD', 'saleRateNB': 23.5941, 'purchaseRateNB': 23.5941}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'AZN', 'saleRateNB': 21.5477, 'purchaseRateNB': 21.5477}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'BYN', 'saleRateNB': 13.2919, 'purchaseRateNB': 13.2919}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'CAD', 'saleRateNB': 27.2209, 'purchaseRateNB': 27.2209}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'CHF', 'saleRateNB': 40.3404, 'purchaseRateNB': 40.3404, 'saleRate': 41.53, 'purchaseRate': 40.6}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'CNY', 'saleRateNB': 5.0067, 'purchaseRateNB': 5.0067}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'CZK', 'saleRateNB': 1.5969, 'purchaseRateNB': 1.5969, 'saleRate': 1.6475, 'purchaseRate': 1.61}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'DKK', 'saleRateNB': 5.2172, 'purchaseRateNB': 5.2172}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'EUR', 'saleRateNB': 38.898, 'purchaseRateNB': 38.898, 'saleRate': 41.15, 'purchaseRate': 40.15}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'GBP', 'saleRateNB': 44.8185, 'purchaseRateNB': 44.8185, 'saleRate': 46.27, 'purchaseRate': 45.2}
+2023-09-26 22:52:46,035 {'baseCurrency': 'UAH', 'currency': 'GEL', 'saleRateNB': 13.9235, 'purchaseRateNB': 13.9235}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'HUF', 'saleRateNB': 0.100585, 'purchaseRateNB': 0.100585}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'ILS', 'saleRateNB': 9.6028, 'purchaseRateNB': 9.6028}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'JPY', 'saleRateNB': 0.24667, 'purchaseRateNB': 0.24667}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'KZT', 'saleRateNB': 0.077226, 'purchaseRateNB': 0.077226}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'MDL', 'saleRateNB': 2.014, 'purchaseRateNB': 2.014}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'NOK', 'saleRateNB': 3.4037, 'purchaseRateNB': 3.4037}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'PLN', 'saleRateNB': 8.4624, 'purchaseRateNB': 8.4624, 'saleRate': 8.75, 'purchaseRate': 8.55}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'SEK', 'saleRateNB': 3.2715, 'purchaseRateNB': 3.2715}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'SGD', 'saleRateNB': 26.7902, 'purchaseRateNB': 26.7902}
+2023-09-26 22:52:46,036 {'baseCurrency': 'UAH', 'currency': 'TMT', 'saleRateNB': 10.4482, 'purchaseRateNB': 10.4482}
+2023-09-26 22:52:46,037 {'baseCurrency': 'UAH', 'currency': 'TRY', 'saleRateNB': 1.3461, 'purchaseRateNB': 1.3461}
+2023-09-26 22:52:46,037 {'baseCurrency': 'UAH', 'currency': 'UAH', 'saleRateNB': 1.0, 'purchaseRateNB': 1.0}
+2023-09-26 22:52:46,037 {'baseCurrency': 'UAH', 'currency': 'USD', 'saleRateNB': 36.5686, 'purchaseRateNB': 36.5686, 'saleRate': 37.8, 'purchaseRate': 37.2}
+2023-09-26 22:52:46,037 {'baseCurrency': 'UAH', 'currency': 'UZS', 'saleRateNB': 0.0030247, 'purchaseRateNB': 0.0030247}
+2023-09-26 22:52:46,037 {'baseCurrency': 'UAH', 'currency': 'XAU', 'saleRateNB': 70436.61, 'purchaseRateNB': 70436.61}
+2023-09-26 22:52:46,038 ('::1', 64225, 0, 0) disconnects
+2023-09-26 22:52:46,038 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 136, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 150, in distrubute
+    await self.send_to_client(r, ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 131, in send_to_client
+    await ws.send(message)
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\protocol.py", line 652, in send
+    raise TypeError("data is a dict-like object")
+TypeError: data is a dict-like object
+2023-09-26 22:52:46,055 connection closed
+2023-09-26 22:54:02,343 server listening on [::1]:8080
+2023-09-26 22:54:02,345 server listening on 127.0.0.1:8080
+2023-09-26 22:54:06,111 connection open
+2023-09-26 22:54:06,112 ('::1', 64241, 0, 0) connects
+2023-09-26 22:54:08,018 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'AUD', 'saleRateNB': 23.5941, 'purchaseRateNB': 23.5941}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'AZN', 'saleRateNB': 21.5477, 'purchaseRateNB': 21.5477}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'BYN', 'saleRateNB': 13.2919, 'purchaseRateNB': 13.2919}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'CAD', 'saleRateNB': 27.2209, 'purchaseRateNB': 27.2209}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'CHF', 'saleRateNB': 40.3404, 'purchaseRateNB': 40.3404, 'saleRate': 41.53, 'purchaseRate': 40.6}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'CNY', 'saleRateNB': 5.0067, 'purchaseRateNB': 5.0067}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'CZK', 'saleRateNB': 1.5969, 'purchaseRateNB': 1.5969, 'saleRate': 1.6475, 'purchaseRate': 1.61}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'DKK', 'saleRateNB': 5.2172, 'purchaseRateNB': 5.2172}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'EUR', 'saleRateNB': 38.898, 'purchaseRateNB': 38.898, 'saleRate': 41.15, 'purchaseRate': 40.15}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'GBP', 'saleRateNB': 44.8185, 'purchaseRateNB': 44.8185, 'saleRate': 46.27, 'purchaseRate': 45.2}
+2023-09-26 22:54:08,218 {'baseCurrency': 'UAH', 'currency': 'GEL', 'saleRateNB': 13.9235, 'purchaseRateNB': 13.9235}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'HUF', 'saleRateNB': 0.100585, 'purchaseRateNB': 0.100585}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'ILS', 'saleRateNB': 9.6028, 'purchaseRateNB': 9.6028}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'JPY', 'saleRateNB': 0.24667, 'purchaseRateNB': 0.24667}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'KZT', 'saleRateNB': 0.077226, 'purchaseRateNB': 0.077226}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'MDL', 'saleRateNB': 2.014, 'purchaseRateNB': 2.014}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'NOK', 'saleRateNB': 3.4037, 'purchaseRateNB': 3.4037}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'PLN', 'saleRateNB': 8.4624, 'purchaseRateNB': 8.4624, 'saleRate': 8.75, 'purchaseRate': 8.55}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'SEK', 'saleRateNB': 3.2715, 'purchaseRateNB': 3.2715}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'SGD', 'saleRateNB': 26.7902, 'purchaseRateNB': 26.7902}
+2023-09-26 22:54:08,219 {'baseCurrency': 'UAH', 'currency': 'TMT', 'saleRateNB': 10.4482, 'purchaseRateNB': 10.4482}
+2023-09-26 22:54:08,220 {'baseCurrency': 'UAH', 'currency': 'TRY', 'saleRateNB': 1.3461, 'purchaseRateNB': 1.3461}
+2023-09-26 22:54:08,220 {'baseCurrency': 'UAH', 'currency': 'UAH', 'saleRateNB': 1.0, 'purchaseRateNB': 1.0}
+2023-09-26 22:54:08,220 {'baseCurrency': 'UAH', 'currency': 'USD', 'saleRateNB': 36.5686, 'purchaseRateNB': 36.5686, 'saleRate': 37.8, 'purchaseRate': 37.2}
+2023-09-26 22:54:08,220 {'baseCurrency': 'UAH', 'currency': 'UZS', 'saleRateNB': 0.0030247, 'purchaseRateNB': 0.0030247}
+2023-09-26 22:54:08,220 {'baseCurrency': 'UAH', 'currency': 'XAU', 'saleRateNB': 70436.61, 'purchaseRateNB': 70436.61}
+2023-09-26 22:57:54,401 server listening on 127.0.0.1:8080
+2023-09-26 22:57:54,402 server listening on [::1]:8080
+2023-09-26 22:57:59,652 connection open
+2023-09-26 22:57:59,662 ('::1', 64274, 0, 0) connects
+2023-09-26 22:58:01,789 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:58:25,171 server listening on [::1]:8080
+2023-09-26 22:58:25,173 server listening on 127.0.0.1:8080
+2023-09-26 22:58:39,651 server listening on 127.0.0.1:8080
+2023-09-26 22:58:39,652 server listening on [::1]:8080
+2023-09-26 22:58:42,180 connection open
+2023-09-26 22:58:42,182 ('::1', 64285, 0, 0) connects
+2023-09-26 22:58:44,495 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 22:59:24,855 server listening on [::1]:8080
+2023-09-26 22:59:24,857 server listening on 127.0.0.1:8080
+2023-09-26 22:59:28,878 connection open
+2023-09-26 22:59:28,879 ('::1', 64297, 0, 0) connects
+2023-09-26 22:59:30,705 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:04:54,605 server listening on [::1]:8080
+2023-09-26 23:04:54,606 server listening on 127.0.0.1:8080
+2023-09-26 23:05:01,627 connection open
+2023-09-26 23:05:01,629 ('::1', 64353, 0, 0) connects
+2023-09-26 23:05:03,353 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:05:51,178 server listening on 127.0.0.1:8080
+2023-09-26 23:05:51,179 server listening on [::1]:8080
+2023-09-26 23:05:53,808 connection open
+2023-09-26 23:05:53,815 ('::1', 64361, 0, 0) connects
+2023-09-26 23:05:55,395 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:06:46,310 server listening on [::1]:8080
+2023-09-26 23:06:46,311 server listening on 127.0.0.1:8080
+2023-09-26 23:06:48,525 connection open
+2023-09-26 23:06:48,525 ('::1', 64368, 0, 0) connects
+2023-09-26 23:06:50,187 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:08:40,712 server listening on 127.0.0.1:8080
+2023-09-26 23:08:40,713 server listening on [::1]:8080
+2023-09-26 23:08:43,211 connection open
+2023-09-26 23:08:43,213 ('::1', 64380, 0, 0) connects
+2023-09-26 23:08:44,949 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:08:45,179 ('::1', 64380, 0, 0) disconnects
+2023-09-26 23:08:45,180 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 104, in data_output
+    result += "{} {} == {}/{} money {}\n".format(data['currency'], money, round(Decimal(money) * Decimal(data['saleRateNB']), 2))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: Replacement index 3 out of range for positional args tuple
+2023-09-26 23:08:45,182 connection closed
+2023-09-26 23:09:07,629 server listening on [::1]:8080
+2023-09-26 23:09:07,630 server listening on 127.0.0.1:8080
+2023-09-26 23:09:10,691 connection open
+2023-09-26 23:09:10,693 ('::1', 64386, 0, 0) connects
+2023-09-26 23:09:12,324 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:09:59,030 server listening on 127.0.0.1:8080
+2023-09-26 23:09:59,032 server listening on [::1]:8080
+2023-09-26 23:10:01,928 connection open
+2023-09-26 23:10:01,929 ('::1', 64397, 0, 0) connects
+2023-09-26 23:10:03,897 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:10:35,461 exchange -d 26.09.2023 -c eur usd -m 1232
+2023-09-26 23:10:35,620 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.202326.09.2023
+2023-09-26 23:10:35,620 ('::1', 64397, 0, 0) disconnects
+2023-09-26 23:10:35,620 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 99, in data_output
+    for data in datas["exchangeRate"]:
+                ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2023-09-26 23:10:35,623 connection closed
+2023-09-26 23:10:41,059 connection open
+2023-09-26 23:10:41,061 ('::1', 64402, 0, 0) connects
+2023-09-26 23:10:42,739 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:10:45,623 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.202326.09.202325.09.2023
+2023-09-26 23:10:45,624 ('::1', 64402, 0, 0) disconnects
+2023-09-26 23:10:45,624 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 99, in data_output
+    for data in datas["exchangeRate"]:
+                ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2023-09-26 23:10:45,625 connection closed
+2023-09-26 23:10:54,766 connection open
+2023-09-26 23:10:54,768 ('::1', 64405, 0, 0) connects
+2023-09-26 23:10:56,522 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:10:56,670 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.202326.09.202325.09.202325.09.2023
+2023-09-26 23:10:56,671 ('::1', 64405, 0, 0) disconnects
+2023-09-26 23:10:56,671 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 99, in data_output
+    for data in datas["exchangeRate"]:
+                ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2023-09-26 23:10:56,672 connection closed
+2023-09-26 23:10:58,018 connection open
+2023-09-26 23:10:58,021 ('::1', 64407, 0, 0) connects
+2023-09-26 23:10:58,484 ('::1', 64407, 0, 0) disconnects
+2023-09-26 23:10:58,484 connection closed
+2023-09-26 23:10:58,507 connection open
+2023-09-26 23:10:58,508 ('::1', 64408, 0, 0) connects
+2023-09-26 23:11:24,841 ('::1', 64408, 0, 0) disconnects
+2023-09-26 23:11:24,841 connection closed
+2023-09-26 23:11:24,863 connection open
+2023-09-26 23:11:24,864 ('::1', 64411, 0, 0) connects
+2023-09-26 23:11:26,733 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:11:27,424 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.202326.09.202325.09.202325.09.202325.09.2023
+2023-09-26 23:11:27,425 ('::1', 64411, 0, 0) disconnects
+2023-09-26 23:11:27,425 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 99, in data_output
+    for data in datas["exchangeRate"]:
+                ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2023-09-26 23:11:27,426 connection closed
+2023-09-26 23:11:41,379 connection open
+2023-09-26 23:11:41,383 ('::1', 64413, 0, 0) connects
+2023-09-26 23:11:42,890 ('::1', 64413, 0, 0) disconnects
+2023-09-26 23:11:42,891 connection closed
+2023-09-26 23:11:42,916 connection open
+2023-09-26 23:11:42,921 ('::1', 64414, 0, 0) connects
+2023-09-26 23:11:46,692 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:11:46,858 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.202326.09.202325.09.202325.09.202325.09.202325.09.2023
+2023-09-26 23:11:46,858 ('::1', 64414, 0, 0) disconnects
+2023-09-26 23:11:46,859 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 99, in data_output
+    for data in datas["exchangeRate"]:
+                ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2023-09-26 23:11:46,860 connection closed
+2023-09-26 23:11:48,764 connection open
+2023-09-26 23:11:48,785 ('::1', 64416, 0, 0) connects
+2023-09-26 23:11:49,204 ('::1', 64416, 0, 0) disconnects
+2023-09-26 23:11:49,204 connection closed
+2023-09-26 23:11:49,228 connection open
+2023-09-26 23:11:49,229 ('::1', 64417, 0, 0) connects
+2023-09-26 23:11:49,581 ('::1', 64417, 0, 0) disconnects
+2023-09-26 23:11:49,582 connection closed
+2023-09-26 23:11:49,605 connection open
+2023-09-26 23:11:49,608 ('::1', 64418, 0, 0) connects
+2023-09-26 23:11:49,822 ('::1', 64418, 0, 0) disconnects
+2023-09-26 23:11:49,822 connection closed
+2023-09-26 23:11:49,846 connection open
+2023-09-26 23:11:49,875 ('::1', 64419, 0, 0) connects
+2023-09-26 23:11:51,391 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:11:56,859 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=25.09.202326.09.202325.09.202325.09.202325.09.202325.09.202325.09.2023
+2023-09-26 23:11:56,860 ('::1', 64419, 0, 0) disconnects
+2023-09-26 23:11:56,860 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 93, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 99, in data_output
+    for data in datas["exchangeRate"]:
+                ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2023-09-26 23:11:56,861 connection closed
+2023-09-26 23:13:28,155 server listening on [::1]:8080
+2023-09-26 23:13:28,157 server listening on 127.0.0.1:8080
+2023-09-26 23:13:31,290 connection open
+2023-09-26 23:13:31,291 ('::1', 64433, 0, 0) connects
+2023-09-26 23:13:32,959 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:13:33,147 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=
+2023-09-26 23:13:33,148 ('::1', 64433, 0, 0) disconnects
+2023-09-26 23:13:33,148 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 139, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 151, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 95, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 101, in data_output
+    for data in datas["exchangeRate"]:
+                ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2023-09-26 23:13:33,151 connection closed
+2023-09-26 23:13:55,977 server listening on 127.0.0.1:8080
+2023-09-26 23:13:55,978 server listening on [::1]:8080
+2023-09-26 23:13:58,984 connection open
+2023-09-26 23:13:58,987 ('::1', 64441, 0, 0) connects
+2023-09-26 23:14:03,008 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:14:12,232 exchange -d 26.09.2023 -c eur usd -m 1232
+2023-09-26 23:14:29,896 exchange -d 25.09.2023 -c usd -m 1232
+2023-09-26 23:15:10,227 server listening on 127.0.0.1:8080
+2023-09-26 23:15:10,228 server listening on [::1]:8080
+2023-09-26 23:15:33,867 connection open
+2023-09-26 23:15:33,875 ('::1', 64455, 0, 0) connects
+2023-09-26 23:15:36,977 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:16:20,777 server listening on 127.0.0.1:8080
+2023-09-26 23:16:20,779 server listening on [::1]:8080
+2023-09-26 23:16:24,456 connection open
+2023-09-26 23:16:24,459 ('::1', 64477, 0, 0) connects
+2023-09-26 23:16:26,652 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:17:47,901 ('::1', 64477, 0, 0) disconnects
+2023-09-26 23:17:47,901 connection closed
+2023-09-26 23:17:47,921 connection open
+2023-09-26 23:17:47,934 ('::1', 64483, 0, 0) connects
+2023-09-26 23:17:49,764 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:18:04,701 server listening on [::1]:8080
+2023-09-26 23:18:04,703 server listening on 127.0.0.1:8080
+2023-09-26 23:18:05,749 connection open
+2023-09-26 23:18:05,751 ('::1', 64491, 0, 0) connects
+2023-09-26 23:18:06,725 ('::1', 64491, 0, 0) disconnects
+2023-09-26 23:18:06,725 connection closed
+2023-09-26 23:18:06,749 connection open
+2023-09-26 23:18:06,751 ('::1', 64492, 0, 0) connects
+2023-09-26 23:18:08,342 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:18:16,167 exchange -d 20.09.2023 -c eur usd -m 1232
+2023-09-26 23:20:06,597 server listening on 127.0.0.1:8080
+2023-09-26 23:20:06,599 server listening on [::1]:8080
+2023-09-26 23:20:09,381 connection open
+2023-09-26 23:20:09,383 ('::1', 64514, 0, 0) connects
+2023-09-26 23:20:11,312 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:20:11,312 ['EUR', 'USD']
+2023-09-26 23:20:11,312 eur usd
+2023-09-26 23:21:05,768 ('::1', 64514, 0, 0) disconnects
+2023-09-26 23:21:05,769 connection closed
+2023-09-26 23:21:05,794 connection open
+2023-09-26 23:21:05,799 ('::1', 64524, 0, 0) connects
+2023-09-26 23:21:08,377 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:21:08,377 eur usd
+2023-09-26 23:21:08,378 eur usd
+2023-09-26 23:21:17,262 exchange -d 25.09.2023  -m 1232
+2023-09-26 23:21:17,262 eur usd
+2023-09-26 23:21:17,262 ('::1', 64524, 0, 0) disconnects
+2023-09-26 23:21:17,263 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 137, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 147, in distrubute
+    await parser_string(message)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 59, in parser_string
+    currencies = re.search(r'-c (.+?) -m', message).group(1)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'group'
+2023-09-26 23:21:17,267 connection closed
+2023-09-26 23:22:03,306 server listening on [::1]:8080
+2023-09-26 23:22:03,307 server listening on 127.0.0.1:8080
+2023-09-26 23:22:05,767 connection open
+2023-09-26 23:22:05,770 ('::1', 64536, 0, 0) connects
+2023-09-26 23:22:11,390 exchange -d 25.09.2023  -m 1232
+2023-09-26 23:22:11,390 ['EUR', 'USD']
+2023-09-26 23:22:11,390 ['EUR', 'USD']
+2023-09-26 23:22:21,471 exchange -d 25.09.2023 -c usd -m 1232
+2023-09-26 23:22:21,471 ['EUR', 'USD']
+2023-09-26 23:22:21,471 usd
+2023-09-26 23:23:05,392 server listening on [::1]:8080
+2023-09-26 23:23:05,393 server listening on 127.0.0.1:8080
+2023-09-26 23:23:08,316 connection open
+2023-09-26 23:23:08,318 ('::1', 64550, 0, 0) connects
+2023-09-26 23:23:10,084 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:23:10,085 <class 'list'>
+2023-09-26 23:23:10,085 <class 'str'>
+2023-09-26 23:23:31,011 exchange -d 25.09.2023  -m 1232
+2023-09-26 23:23:31,011 <class 'str'>
+2023-09-26 23:23:31,011 <class 'str'>
+2023-09-26 23:23:54,067 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:23:54,067 <class 'str'>
+2023-09-26 23:23:54,067 <class 'str'>
+2023-09-26 23:24:37,774 server listening on 127.0.0.1:8080
+2023-09-26 23:24:37,775 server listening on [::1]:8080
+2023-09-26 23:24:41,212 connection open
+2023-09-26 23:24:41,214 ('::1', 64563, 0, 0) connects
+2023-09-26 23:24:43,527 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:24:43,528 <class 'list'>
+2023-09-26 23:24:43,528 <class 'str'>
+2023-09-26 23:24:57,568 exchange -d 25.09.2023  -m 1232
+2023-09-26 23:24:57,568 <class 'list'>
+2023-09-26 23:24:57,568 <class 'list'>
+2023-09-26 23:25:46,134 server listening on 127.0.0.1:8080
+2023-09-26 23:25:46,135 server listening on [::1]:8080
+2023-09-26 23:26:09,007 connection open
+2023-09-26 23:26:09,008 ('::1', 64580, 0, 0) connects
+2023-09-26 23:26:09,690 ('::1', 64580, 0, 0) disconnects
+2023-09-26 23:26:09,690 connection closed
+2023-09-26 23:26:09,714 connection open
+2023-09-26 23:26:09,740 ('::1', 64581, 0, 0) connects
+2023-09-26 23:26:14,733 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:26:14,733 <class 'list'>
+2023-09-26 23:26:14,734 <class 'list'>
+2023-09-26 23:26:32,657 ('::1', 64581, 0, 0) disconnects
+2023-09-26 23:26:32,658 connection closed
+2023-09-26 23:26:32,676 connection open
+2023-09-26 23:26:32,753 ('::1', 64584, 0, 0) connects
+2023-09-26 23:26:38,217 exchange -d 25.09.2023  -m 1232
+2023-09-26 23:26:38,217 <class 'list'>
+2023-09-26 23:26:38,217 <class 'list'>
+2023-09-26 23:26:46,295 exchange -d 25.09.2023 -c usd -m 1232
+2023-09-26 23:26:46,295 <class 'list'>
+2023-09-26 23:26:46,295 <class 'list'>
+2023-09-26 23:27:09,639 server listening on [::1]:8080
+2023-09-26 23:27:09,640 server listening on 127.0.0.1:8080
+2023-09-26 23:27:12,441 connection open
+2023-09-26 23:27:12,442 ('::1', 64590, 0, 0) connects
+2023-09-26 23:27:18,526 exchange -d 25.09.2023  -m 1232
+2023-09-26 23:27:18,526 ['EUR', 'USD']
+2023-09-26 23:27:18,526 ['EUR', 'USD']
+2023-09-26 23:27:28,610 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:27:28,610 ['EUR', 'USD']
+2023-09-26 23:27:28,610 ['e', 'u', 'r', ' ', 'u', 's', 'd']
+2023-09-26 23:28:03,824 server listening on 127.0.0.1:8080
+2023-09-26 23:28:03,826 server listening on [::1]:8080
+2023-09-26 23:28:07,245 connection open
+2023-09-26 23:28:07,247 ('::1', 64601, 0, 0) connects
+2023-09-26 23:28:08,995 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:28:08,995 ['EUR', 'USD']
+2023-09-26 23:28:08,995 ['e', 'u', 'r', ' ', 'u', 's', 'd']
+2023-09-26 23:28:29,466 server listening on [::1]:8080
+2023-09-26 23:28:29,467 server listening on 127.0.0.1:8080
+2023-09-26 23:28:32,427 connection open
+2023-09-26 23:28:32,452 ('::1', 64608, 0, 0) connects
+2023-09-26 23:28:34,867 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:28:34,867 ['EUR', 'USD']
+2023-09-26 23:28:34,868 ['eur', 'usd']
+2023-09-26 23:28:44,375 exchange -d 25.09.2023 -c usd -m 1232
+2023-09-26 23:28:44,376 ['EUR', 'USD']
+2023-09-26 23:28:44,376 ['usd']
+2023-09-26 23:29:09,712 exchange -d 25.09.2023 -c eur usd XAU-m 1232
+2023-09-26 23:29:09,713 ['EUR', 'USD']
+2023-09-26 23:29:09,713 ['EUR', 'USD']
+2023-09-26 23:29:25,463 exchange -d 25.09.2023 -c eur usd XAU -m 1232
+2023-09-26 23:29:25,464 ['EUR', 'USD']
+2023-09-26 23:29:25,464 ['eur', 'usd', 'XAU']
+2023-09-26 23:29:52,036 exchange -d 25.09.2023 -c eur usd -m 1
+2023-09-26 23:29:52,036 ['EUR', 'USD']
+2023-09-26 23:29:52,037 ['eur', 'usd']
+2023-09-26 23:30:06,004 exchange -d 25.09.2023 -c eur -m 1232
+2023-09-26 23:30:06,004 ['EUR', 'USD']
+2023-09-26 23:30:06,004 ['eur']
+2023-09-26 23:30:14,028 exchange -d 25.09.2023
+2023-09-26 23:30:14,028 ['EUR', 'USD']
+2023-09-26 23:30:14,028 ['EUR', 'USD']
+2023-09-26 23:30:14,187 ('::1', 64608, 0, 0) disconnects
+2023-09-26 23:30:14,187 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 142, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 154, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 98, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 109, in data_output
+    result += "{} {} == {} UAH ".format(money, data['currency'],  round(Decimal(money) * Decimal(data['saleRateNB']), 2))
+                                                                        ^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+2023-09-26 23:30:14,189 connection closed
+2023-09-26 23:36:18,931 server listening on 127.0.0.1:8080
+2023-09-26 23:36:18,932 server listening on [::1]:8080
+2023-09-26 23:36:24,073 connection open
+2023-09-26 23:36:24,075 ('::1', 64670, 0, 0) connects
+2023-09-26 23:36:26,207 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:36:26,208 ['EUR', 'USD']
+2023-09-26 23:36:26,208 ['eur', 'usd']
+2023-09-26 23:36:31,955 exchange -d 25.09.2023 
+2023-09-26 23:36:31,955 ['EUR', 'USD']
+2023-09-26 23:36:31,955 ['EUR', 'USD']
+2023-09-26 23:39:41,646 server listening on [::1]:8080
+2023-09-26 23:39:41,648 server listening on 127.0.0.1:8080
+2023-09-26 23:39:46,312 connection open
+2023-09-26 23:39:46,313 ('::1', 64687, 0, 0) connects
+2023-09-26 23:39:48,102 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:39:48,103 ['EUR', 'USD']
+2023-09-26 23:39:48,103 ['eur', 'usd']
+2023-09-26 23:40:47,085 exchange -d 2
+2023-09-26 23:40:47,086 ['EUR', 'USD']
+2023-09-26 23:40:47,086 ['EUR', 'USD']
+2023-09-26 23:40:47,086 ('::1', 64687, 0, 0) disconnects
+2023-09-26 23:40:47,086 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 135, in ws_handler
+    pass
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 146, in distrubute
+    await self.send_to_client(r, ws)
+    ^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 70, in date_check
+    if time <= date <= now:
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange -d 2' does not match format '%d.%m.%Y'
+2023-09-26 23:40:47,111 connection closed
+2023-09-26 23:45:25,809 server listening on 127.0.0.1:8080
+2023-09-26 23:45:25,811 server listening on [::1]:8080
+2023-09-26 23:45:42,773 connection open
+2023-09-26 23:45:42,775 ('::1', 64722, 0, 0) connects
+2023-09-26 23:45:43,360 ('::1', 64722, 0, 0) disconnects
+2023-09-26 23:45:43,360 connection closed
+2023-09-26 23:45:43,380 connection open
+2023-09-26 23:45:43,381 ('::1', 64723, 0, 0) connects
+2023-09-26 23:45:46,775 exchange -d 2
+2023-09-26 23:45:46,780 ('::1', 64723, 0, 0) disconnects
+2023-09-26 23:45:46,780 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 70, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange -d 2' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 72, in date_check
+    date = now.replace(day=now.day - (now.day - date))
+                                      ~~~~~~~~^~~~~~
+TypeError: unsupported operand type(s) for -: 'int' and 'str'
+2023-09-26 23:45:46,782 connection closed
+2023-09-26 23:46:09,665 server listening on [::1]:8080
+2023-09-26 23:46:09,666 server listening on 127.0.0.1:8080
+2023-09-26 23:46:12,388 connection open
+2023-09-26 23:46:12,390 ('::1', 64729, 0, 0) connects
+2023-09-26 23:46:18,876 exchange -d 2
+2023-09-26 23:46:18,880 ('::1', 64729, 0, 0) disconnects
+2023-09-26 23:46:18,880 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 70, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange -d 2' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 72, in date_check
+    date = now.replace(day=now.day - (now.day - int(date)))
+                                                ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'exchange -d 2'
+2023-09-26 23:46:18,883 connection closed
+2023-09-26 23:47:20,133 server listening on 127.0.0.1:8080
+2023-09-26 23:47:20,135 server listening on [::1]:8080
+2023-09-26 23:47:21,520 connection open
+2023-09-26 23:47:21,521 ('::1', 64738, 0, 0) connects
+2023-09-26 23:47:24,913 exchange -d 2
+2023-09-26 23:47:24,917 date exchange -d 2 
+2023-09-26 23:47:24,917 ('::1', 64738, 0, 0) disconnects
+2023-09-26 23:47:24,917 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 70, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange -d 2' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 139, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 150, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 73, in date_check
+    date = now.replace(day=now.day - (now.day - int(date)))
+                                                ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'exchange -d 2'
+2023-09-26 23:47:24,920 connection closed
+2023-09-26 23:48:21,148 server listening on 127.0.0.1:8080
+2023-09-26 23:48:21,149 server listening on [::1]:8080
+2023-09-26 23:48:32,786 connection open
+2023-09-26 23:48:32,822 ('::1', 64743, 0, 0) connects
+2023-09-26 23:48:34,222 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:49:38,671 server listening on [::1]:8080
+2023-09-26 23:49:38,672 server listening on 127.0.0.1:8080
+2023-09-26 23:49:41,081 connection open
+2023-09-26 23:49:41,084 ('::1', 64754, 0, 0) connects
+2023-09-26 23:49:42,436 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:49:42,436 date None 
+2023-09-26 23:49:42,437 new date 25.09.2023 
+2023-09-26 23:49:58,019 exchange -d 2
+2023-09-26 23:49:58,019 date 25.09.2023 
+2023-09-26 23:49:58,019 new date exchange -d 2 
+2023-09-26 23:49:58,020 date exchange -d 2 
+2023-09-26 23:49:58,020 ('::1', 64754, 0, 0) disconnects
+2023-09-26 23:49:58,020 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 71, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange -d 2' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 140, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 151, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 74, in date_check
+    date = now.replace(day=now.day - (now.day - int(date)))
+                                                ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'exchange -d 2'
+2023-09-26 23:49:58,024 connection closed
+2023-09-26 23:52:41,782 server listening on 127.0.0.1:8080
+2023-09-26 23:52:41,783 server listening on [::1]:8080
+2023-09-26 23:52:45,040 connection open
+2023-09-26 23:52:45,044 ('::1', 64771, 0, 0) connects
+2023-09-26 23:52:46,801 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:52:46,802 ('::1', 64771, 0, 0) disconnects
+2023-09-26 23:52:46,802 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 140, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 150, in distrubute
+    await parser_string(message)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 60, in parser_string
+    date = re.sub(r".*-d ([0-9]+", r"\1", message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\__init__.py", line 185, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\__init__.py", line 294, in _compile
+    p = _compiler.compile(pattern, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_compiler.py", line 743, in compile
+    p = _parser.parse(p, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_parser.py", line 980, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_parser.py", line 455, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_parser.py", line 865, in _parse
+    raise source.error("missing ), unterminated subpattern",
+re.error: missing ), unterminated subpattern at position 5
+2023-09-26 23:52:46,807 connection closed
+2023-09-26 23:53:10,788 server listening on [::1]:8080
+2023-09-26 23:53:10,790 server listening on 127.0.0.1:8080
+2023-09-26 23:53:21,404 connection open
+2023-09-26 23:53:21,405 ('::1', 64777, 0, 0) connects
+2023-09-26 23:53:24,867 exchange -d 2
+2023-09-26 23:53:24,868 ('::1', 64777, 0, 0) disconnects
+2023-09-26 23:53:24,868 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 140, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 150, in distrubute
+    await parser_string(message)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 60, in parser_string
+    date = re.sub(r".*-d ([0-9]+", r"\1", message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\__init__.py", line 185, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\__init__.py", line 294, in _compile
+    p = _compiler.compile(pattern, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_compiler.py", line 743, in compile
+    p = _parser.parse(p, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_parser.py", line 980, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_parser.py", line 455, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_parser.py", line 865, in _parse
+    raise source.error("missing ), unterminated subpattern",
+re.error: missing ), unterminated subpattern at position 5
+2023-09-26 23:53:24,874 connection closed
+2023-09-26 23:54:30,178 server listening on 127.0.0.1:8080
+2023-09-26 23:54:30,179 server listening on [::1]:8080
+2023-09-26 23:54:32,884 connection open
+2023-09-26 23:54:32,885 ('::1', 64783, 0, 0) connects
+2023-09-26 23:54:34,478 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:54:34,479 ('::1', 64783, 0, 0) disconnects
+2023-09-26 23:54:34,479 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 140, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 150, in distrubute
+    await parser_string(message)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 60, in parser_string
+    date = re.sub(r".*-d [0-9]+", r"\1", message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\__init__.py", line 185, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\__init__.py", line 317, in _subx
+    template = _compile_repl(template, pattern)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\__init__.py", line 308, in _compile_repl
+    return _parser.parse_template(repl, pattern)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_parser.py", line 1072, in parse_template
+    addgroup(int(this[1:]), len(this) - 1)
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\re\_parser.py", line 1008, in addgroup
+    raise s.error("invalid group reference %d" % index, pos)
+re.error: invalid group reference 1 at position 1
+2023-09-26 23:54:34,483 connection closed
+2023-09-26 23:56:59,894 server listening on [::1]:8080
+2023-09-26 23:56:59,895 server listening on 127.0.0.1:8080
+2023-09-26 23:57:51,085 connection open
+2023-09-26 23:57:51,087 ('::1', 64811, 0, 0) connects
+2023-09-26 23:57:53,004 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:57:53,008 date 25.09.202 
+2023-09-26 23:57:53,008 ('::1', 64811, 0, 0) disconnects
+2023-09-26 23:57:53,008 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 71, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '25.09.202' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 140, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 151, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 74, in date_check
+    date = now.replace(day=now.day - (now.day - int(date)))
+                                                ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '25.09.202'
+2023-09-26 23:57:53,011 connection closed
+2023-09-26 23:58:44,075 server listening on [::1]:8080
+2023-09-26 23:58:44,077 server listening on 127.0.0.1:8080
+2023-09-26 23:58:46,313 connection open
+2023-09-26 23:58:46,325 ('::1', 64818, 0, 0) connects
+2023-09-26 23:58:48,351 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:58:53,496 exchange -d 2
+2023-09-26 23:58:53,496 date exchange -d 2 
+2023-09-26 23:58:53,497 ('::1', 64818, 0, 0) disconnects
+2023-09-26 23:58:53,497 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 71, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange -d 2' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 140, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 151, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 74, in date_check
+    date = now.replace(day=now.day - (now.day - int(date)))
+                                                ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'exchange -d 2'
+2023-09-26 23:58:53,500 connection closed
+2023-09-26 23:59:32,801 server listening on [::1]:8080
+2023-09-26 23:59:32,802 server listening on 127.0.0.1:8080
+2023-09-26 23:59:37,583 connection open
+2023-09-26 23:59:37,586 ('::1', 64827, 0, 0) connects
+2023-09-26 23:59:41,307 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-26 23:59:46,034 exchange -d 2
+2023-09-26 23:59:46,034 date exchange -d 2 
+2023-09-26 23:59:46,034 ('::1', 64827, 0, 0) disconnects
+2023-09-26 23:59:46,034 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 69, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange -d 2' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 72, in date_check
+    date = now.replace(day=now.day - (now.day - int(date[:-1])))
+                                                ^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'exchange -d '
+2023-09-26 23:59:46,038 connection closed
+2023-09-27 00:00:07,779 server listening on 127.0.0.1:8080
+2023-09-27 00:00:07,780 server listening on [::1]:8080
+2023-09-27 00:00:11,313 connection open
+2023-09-27 00:00:11,315 ('::1', 64834, 0, 0) connects
+2023-09-27 00:00:15,464 exchange -d 2
+2023-09-27 00:00:15,468 date exchange -d 2 
+2023-09-27 00:00:15,469  new date 2023-09-02 00:00:07.765432 
+2023-09-27 00:01:47,342 server listening on 127.0.0.1:8080
+2023-09-27 00:01:47,343 server listening on [::1]:8080
+2023-09-27 00:01:49,439 connection open
+2023-09-27 00:01:49,440 ('::1', 64860, 0, 0) connects
+2023-09-27 00:01:51,450 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:01:56,133 exchange -d 2
+2023-09-27 00:01:56,134 date exchange -d 2 
+2023-09-27 00:01:56,134  new date 2023-09-02 00:01:47.331384 
+2023-09-27 00:05:40,906 server listening on [::1]:8080
+2023-09-27 00:05:40,907 server listening on 127.0.0.1:8080
+2023-09-27 00:05:44,796 connection open
+2023-09-27 00:05:44,797 ('::1', 64940, 0, 0) connects
+2023-09-27 00:05:46,504 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:05:51,790 exchange -d 2
+2023-09-27 00:05:51,790 date exchange -d 2 
+2023-09-27 00:05:51,790  new date 2023-09-02 00:05:40.894926 
+2023-09-27 00:06:26,364 server listening on 127.0.0.1:8080
+2023-09-27 00:06:26,366 server listening on [::1]:8080
+2023-09-27 00:06:28,957 connection open
+2023-09-27 00:06:28,960 ('::1', 64947, 0, 0) connects
+2023-09-27 00:06:32,593 exchange -d 2
+2023-09-27 00:06:32,597 date exchange -d 2 
+2023-09-27 00:06:32,597  new date 2023-09-02 00:06:26.349422 
+2023-09-27 00:08:44,211 server listening on [::1]:8080
+2023-09-27 00:08:44,212 server listening on 127.0.0.1:8080
+2023-09-27 00:08:47,769 connection open
+2023-09-27 00:08:47,772 ('::1', 64959, 0, 0) connects
+2023-09-27 00:08:49,514 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:08:49,733 1232 EUR == 47922.34 UAH 1232 USD == 45052.52 UAH 
+2023-09-27 00:09:53,233 server listening on [::1]:8080
+2023-09-27 00:09:53,235 server listening on 127.0.0.1:8080
+2023-09-27 00:09:56,583 connection open
+2023-09-27 00:09:56,584 ('::1', 64971, 0, 0) connects
+2023-09-27 00:09:58,789 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:09:59,023 ['1232 EUR == 47922.34 UAH ', '1232 USD == 45052.52 UAH ', '']
+2023-09-27 00:13:03,731 server listening on [::1]:8080
+2023-09-27 00:13:03,733 server listening on 127.0.0.1:8080
+2023-09-27 00:13:08,562 connection open
+2023-09-27 00:13:08,563 ('::1', 64990, 0, 0) connects
+2023-09-27 00:13:10,274 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:13:16,681 exchange -d 2
+2023-09-27 00:13:16,681 date exchange -d 2 
+2023-09-27 00:13:16,681  new date 2023-09-02 00:13:03.716725 
+2023-09-27 00:14:00,102 server listening on 127.0.0.1:8080
+2023-09-27 00:14:00,103 server listening on [::1]:8080
+2023-09-27 00:14:05,231 connection open
+2023-09-27 00:14:05,233 ('::1', 64997, 0, 0) connects
+2023-09-27 00:14:06,967 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:14:22,178 server listening on [::1]:8080
+2023-09-27 00:14:22,179 server listening on 127.0.0.1:8080
+2023-09-27 00:14:25,052 connection open
+2023-09-27 00:14:25,054 ('::1', 65004, 0, 0) connects
+2023-09-27 00:14:26,406 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:14:31,895 exchange -d 2
+2023-09-27 00:14:31,895 date exchange -d 2 
+2023-09-27 00:14:31,896  new date 2023-09-02 00:14:22.165859 
+2023-09-27 00:14:47,199 exchange -d 25.09.2023 -c usd -m 1232
+2023-09-27 00:15:02,909 exchange -d 25.09.2023 -c eur  -m 12
+2023-09-27 00:15:21,822 server listening on [::1]:8080
+2023-09-27 00:15:21,823 server listening on 127.0.0.1:8080
+2023-09-27 00:15:35,396 connection open
+2023-09-27 00:15:35,402 ('::1', 65016, 0, 0) connects
+2023-09-27 00:15:37,338 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:15:46,817 exchange -d 2
+2023-09-27 00:15:46,817 date exchange -d 2 
+2023-09-27 00:15:46,817  new date 2023-09-02 00:15:21.809892 
+2023-09-27 00:15:51,509 exchange
+2023-09-27 00:15:51,509 date exchange 
+2023-09-27 00:15:51,509 ('::1', 65016, 0, 0) disconnects
+2023-09-27 00:15:51,509 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 69, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 149, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 72, in date_check
+    date = now.replace(day=now.day - (now.day - int(date[-1])))
+                                                ^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'e'
+2023-09-27 00:15:51,512 connection closed
+2023-09-27 00:19:30,293 server listening on [::1]:8080
+2023-09-27 00:19:30,294 server listening on 127.0.0.1:8080
+2023-09-27 00:19:32,489 connection open
+2023-09-27 00:19:32,491 ('::1', 65041, 0, 0) connects
+2023-09-27 00:19:32,861 ('::1', 65041, 0, 0) disconnects
+2023-09-27 00:19:32,862 connection closed
+2023-09-27 00:19:32,886 connection open
+2023-09-27 00:19:32,888 ('::1', 65042, 0, 0) connects
+2023-09-27 00:19:39,751 exchange
+2023-09-27 00:19:39,755 date exchange 
+2023-09-27 00:19:39,755 ('::1', 65042, 0, 0) disconnects
+2023-09-27 00:19:39,755 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 69, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 151, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 72, in date_check
+    date = now.replace(day=now.day - (now.day - int(date[-1])))
+                                                ^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'e'
+2023-09-27 00:19:39,758 connection closed
+2023-09-27 00:20:27,229 server listening on [::1]:8080
+2023-09-27 00:20:27,230 server listening on 127.0.0.1:8080
+2023-09-27 00:20:30,421 connection open
+2023-09-27 00:20:30,424 ('::1', 65051, 0, 0) connects
+2023-09-27 00:20:33,644 exchange
+2023-09-27 00:20:33,647 date exchange 
+2023-09-27 00:20:33,648 ('::1', 65051, 0, 0) disconnects
+2023-09-27 00:20:33,648 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 69, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'exchange' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 152, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 72, in date_check
+    date = now.replace(day=now.day - (now.day - int(date[-1])))
+                                                ^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'e'
+2023-09-27 00:20:33,650 connection closed
+2023-09-27 00:21:07,361 server listening on [::1]:8080
+2023-09-27 00:21:07,362 server listening on 127.0.0.1:8080
+2023-09-27 00:21:10,200 connection open
+2023-09-27 00:21:10,205 ('::1', 65058, 0, 0) connects
+2023-09-27 00:21:13,517 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:21:22,048 "exchange"
+2023-09-27 00:21:22,048 date "exchange" 
+2023-09-27 00:21:22,048 ('::1', 65058, 0, 0) disconnects
+2023-09-27 00:21:22,049 connection handler failed
+Traceback (most recent call last):
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 69, in date_check
+    date = datetime.datetime.strptime(date, "%d.%m.%Y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '"exchange"' does not match format '%d.%m.%Y'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 152, in distrubute
+    await date_check()
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 72, in date_check
+    date = now.replace(day=now.day - (now.day - int(date[-1])))
+                                                ^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '"'
+2023-09-27 00:21:22,052 connection closed
+2023-09-27 00:29:18,061 server listening on 127.0.0.1:8080
+2023-09-27 00:29:18,062 server listening on [::1]:8080
+2023-09-27 00:29:21,249 connection open
+2023-09-27 00:29:21,250 ('::1', 65083, 0, 0) connects
+2023-09-27 00:29:24,202 ('::1', 65083, 0, 0) disconnects
+2023-09-27 00:29:24,202 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 159, in distrubute
+    for t2 in help_list.split("-"):
+              ^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'split'
+2023-09-27 00:29:24,204 connection closed
+2023-09-27 00:31:03,889 server listening on 127.0.0.1:8080
+2023-09-27 00:31:03,891 server listening on [::1]:8080
+2023-09-27 00:31:06,296 connection open
+2023-09-27 00:31:06,298 ('::1', 65101, 0, 0) connects
+2023-09-27 00:32:17,855 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:32:34,364 server listening on 127.0.0.1:8080
+2023-09-27 00:32:34,365 server listening on [::1]:8080
+2023-09-27 00:38:22,713 server listening on [::1]:8080
+2023-09-27 00:38:22,713 server listening on 127.0.0.1:8080
+2023-09-27 00:39:15,329 server listening on 127.0.0.1:8080
+2023-09-27 00:39:15,330 server listening on [::1]:8080
+2023-09-27 00:39:20,159 connection open
+2023-09-27 00:39:20,161 ('::1', 65183, 0, 0) connects
+2023-09-27 00:39:22,902 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:39:23,121 ('::1', 65183, 0, 0) disconnects
+2023-09-27 00:39:23,121 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 157, in distrubute
+    await self.log_exchange_to_file(ws.name, date)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 167, in log_exchange_to_file
+    date_str = datetime.now().strftime("%d-%m-%Y %H-%M-%S")
+               ^^^^^^^^^^^^
+AttributeError: module 'datetime' has no attribute 'now'
+2023-09-27 00:39:23,124 connection closed
+2023-09-27 00:40:05,272 server listening on 127.0.0.1:8080
+2023-09-27 00:40:05,273 server listening on [::1]:8080
+2023-09-27 00:40:07,448 connection open
+2023-09-27 00:40:07,450 ('::1', 65193, 0, 0) connects
+2023-09-27 00:40:09,637 exchange -d 2
+2023-09-27 00:40:09,641 date exchange -d 2 
+2023-09-27 00:40:09,641  new date 2023-09-02 00:40:05.258943 
+2023-09-27 00:40:12,147 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:40:38,435 exchange -d 25.09.2023  -m 1232
+2023-09-27 00:40:51,234 exchange -d 27.09.2023 
+2023-09-27 00:40:51,421 Error status 500 for https://api.privatbank.ua/p24api/exchange_rates?json&date=27.09.2023
+2023-09-27 00:40:51,421 ('::1', 65193, 0, 0) disconnects
+2023-09-27 00:40:51,421 connection handler failed
+Traceback (most recent call last):
+  File "C:\Users\maxkr\AppData\Local\Programs\Python\Python311\Lib\site-packages\websockets\legacy\server.py", line 240, in handler
+    await self.ws_handler(self)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 138, in ws_handler
+    await self.distrubute(ws)
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 153, in distrubute
+    r = await get_exchange()
+        ^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 100, in get_exchange
+    result = await data_output(res)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Git_Files\__Python_GOIT__\__Web_2_0__\Web_HW_5\server1.py", line 106, in data_output
+    for data in datas["exchangeRate"]:
+                ~~~~~^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2023-09-27 00:40:51,424 connection closed
+2023-09-27 00:41:44,365 connection open
+2023-09-27 00:41:44,366 ('::1', 65211, 0, 0) connects
+2023-09-27 00:41:46,841 exchange -d 25.09.2023 -c eur usd -m 1232
