@@ -38,7 +38,7 @@ async def date_check():
         date = datetime.datetime.strptime(date, "%d.%m.%Y")
     except ValueError:
         date = now.replace(day=now.day - (now.day - int(date[-1])))
-        
+
     time = now.replace(day=now.day - 10)
     if time <= date <= now:
         date = date.date().strftime("%d.%m.%Y")
@@ -141,6 +141,6 @@ async def main():
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, handlers=[
-    logging.FileHandler("sort_log.txt"),
+    logging.FileHandler("log.txt"),
     logging.StreamHandler()], format="%(asctime)s %(message)s")
     asyncio.run(main())
