@@ -4,44 +4,14 @@ import aiofiles
 import aiohttp
 import websockets
 import names
-from websockets import WebSocketServerProtocol, WebSocketProtocolError
+from websockets import WebSocketServerProtocol
 from websockets.exceptions import ConnectionClosedOK
-
 import re 
 import datetime
 import sys
 from decimal import Decimal
 
 sys.stdout.reconfigure(encoding='utf-8')
-
-list_data = {
-"AUD": "Австралийский Доллар",
-"AZN": "Азербайджанский Ман",
-"BYN": "Білоруський Рубль",
-"CAD": "Канадський Доллар",
-"CHF": "Швейцарський Франк",
-"CNY": "Юань Женьміньбі",
-"CZK": "Чеська Крона",
-"DKK": "Данська Крона",
-"EUR": "Євро",
-"GBP": "Фунт Стерлінгів",
-"GEL": "Грузинський Ларі",
-"HUF": "Угорський Форинт",
-"ILS": "Новий Ізраїльський Шекель",
-"JPY": "Японська Єна",
-"KZT": "Казахстанський Теньге",
-"MDL": "Молдовський Лей",
-"NOK": "Норвезька крона",
-"PLN": "Злотий",
-"SEK": "Шведська Крона",
-"SGD": "Сінгапурський Долар",
-"TMT": "Туркменський Манат",
-"TRY": "Турецька Ліра",
-"UAH": "Українська Гривня",
-"USD": "Долар США",
-"UZS": "Узбецький Сум",
-"XAU": "Золото"
-}
 
 date = None
 currencies = None
@@ -62,26 +32,21 @@ async def parser_string(message):
         pass
     money = re.sub(r".*-m ([0-9]+).*", r"\1", message)
 
-
 async def date_check():
     global date, new_ulr
     try:
         date = datetime.datetime.strptime(date, "%d.%m.%Y")
     except ValueError:
-        logging.info(f'date {date} ')
         date = now.replace(day=now.day - (now.day - int(date[-1])))
-        logging.info(f' new date {date} ')
+        
     time = now.replace(day=now.day - 10)
     if time <= date <= now:
         date = date.date().strftime("%d.%m.%Y")
-        new_ulr = f"{ulr}{date}"
     elif date > now:
         date = now.date().strftime("%d.%m.%Y")
-        new_ulr = f"{ulr}{date}"
     else: 
         date = time.date().strftime("%d.%m.%Y")
-        new_ulr = f"{ulr}{date}"
-
+    new_ulr = f"{ulr}{date}"
 async def request(url):
     async with aiohttp.ClientSession() as session:
         try:
@@ -94,12 +59,10 @@ async def request(url):
             logging.error(f"Connection error {url}: {e}")
         return None
 
-
 async def get_exchange():
     res = await request(new_ulr)
     result = await data_output(res)
     return result 
-
 
 async def data_output(datas):
     result = f"Курс валют на {date}-"
@@ -110,7 +73,6 @@ async def data_output(datas):
                     result += "{} {} = {} UAH-".format(money, data['currency'],  round(Decimal(money) * Decimal(data['saleRateNB']), 2))
                 else:
                     result += "1 {}: buy {} sale {} UAH-".format(data['currency'], data['saleRateNB'], data['purchaseRateNB'])
-
     return str(result)
 
 class Server:

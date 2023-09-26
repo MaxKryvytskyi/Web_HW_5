@@ -1596,3 +1596,5 @@ TypeError: 'NoneType' object is not subscriptable
 2023-09-27 00:41:44,365 connection open
 2023-09-27 00:41:44,366 ('::1', 65211, 0, 0) connects
 2023-09-27 00:41:46,841 exchange -d 25.09.2023 -c eur usd -m 1232
+2023-09-27 00:45:06,183 ('::1', 65211, 0, 0) disconnects
+2023-09-27 00:45:06,183 connection closed
